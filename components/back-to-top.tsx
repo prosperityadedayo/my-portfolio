@@ -14,6 +14,7 @@ export function BackToTop() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  
   return (
     <AnimatePresence>
       {visible && (
