@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-paper text-ink-900 antialiased;
+    font-feature-settings: "ss01" on, "ss02" on;
+  }
+
+  .dark body {
+    @apply bg-ink-900 text-paper;
+  }
+
+  ::selection {
+    @apply bg-signal-amber/30 text-ink-900;
+  }
+
+  :focus-visible {
+    outline: 2px solid theme("colors.signal.teal");
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+}
+
+@layer utilities {
+  .container-page {
+    @apply mx-auto w-full max-w-6xl px-5 sm:px-8;
+  }
+
+  .label-mono {
+    @apply font-mono text-[11px] uppercase tracking-[0.18em] text-signal-teal;
+  }
+
+  .card-surface {
+    @apply border border-ink-600/10 bg-white dark:border-white/10 dark:bg-ink-800;
+  }
+
+  .grid-backdrop {
+    background-image:
+      linear-gradient(to right, currentColor 1px, transparent 1px),
+      linear-gradient(to bottom, currentColor 1px, transparent 1px);
+    background-size: 44px 44px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
