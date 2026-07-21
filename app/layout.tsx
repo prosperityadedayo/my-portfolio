@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Space_Grotesk, Inter, JetBrains_Mono } from "next/font/google";
-import "./globals.css";
+//import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Nav } from "@/components/nav";
 import { Footer } from "@/components/footer";
@@ -27,7 +27,7 @@ const mono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://prosperityadedayo.dev"),
+  metadataBase: new URL("https://prosperity-adedayo.vercel.app"),
   title: {
     default: `${profile.name} | ${profile.role}`,
     template: `%s | ${profile.name}`,
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: `${profile.name} | ${profile.role}`,
     description: profile.summary,
-    url: "https://prosperityadedayo.dev",
+    url: "https://prosperity-adedayo.vercel.app",
     siteName: profile.name,
     type: "website",
     images: ["/images/og-cover.png"],
