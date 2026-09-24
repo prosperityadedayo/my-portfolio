@@ -65,6 +65,30 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: "remitovate",
+    title: "Remitovate",
+    description:
+      "A lightweight invoice management SaaS that helps freelancers and small businesses create, manage, and track professional invoices from one place. Built with a focus on simplicity, ownership, and a smooth invoicing workflow.",
+    problem: "Simplifies invoice creation and management for individuals and small businesses that need a straightforward way to handle their invoicing without complex accounting software.",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase", "PostgreSQL", "React PDF"],
+    image: "/images/projects/remitovate.png",
+    liveUrl: "https://remitovate.vercel.app",
+    featured: true,
+    category: "personal",
+  },
+  {
+    slug: "scryptura",
+    title: "Scryptura",
+    description:
+      "A student-powered academic resource platform for discovering, requesting, sharing, and accessing useful academic materials. Designed around a community contribution loop where students can help each other find resources they need.",
+    problem: "Makes it easier for students to discover and access relevant academic resources while creating a structured way for students to contribute resources to their peers.",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Cloudflare Workers", "Cloudflare D1", "Cloudflare R2", "Clerk"],
+    image: "/images/projects/scryptura.png",
+    liveUrl: "https://scryptura.vercel.app",
+    featured: true,
+    category: "personal",
+  },
+  {
     slug: "edmack-website",
     title: "EDMACK Group Website",
     description:
