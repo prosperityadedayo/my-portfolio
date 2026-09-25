@@ -7,6 +7,7 @@ import { Footer } from "@/components/footer";
 import { ScrollProgress } from "@/components/scroll-progress";
 import { BackToTop } from "@/components/back-to-top";
 import { profile } from "@/lib/data";
+import { Analytics } from "@vercel/analytics/next";
 
 const display = Space_Grotesk({
   subsets: ["latin"],
@@ -94,6 +95,7 @@ export default function RootLayout({
           <Footer />
           <BackToTop />
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
